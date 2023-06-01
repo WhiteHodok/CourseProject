@@ -1,8 +1,5 @@
 package ru.falsher;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 public class Program {
     public static void main(String[] args) {
         double absl;
@@ -91,9 +88,5 @@ public class Program {
         }
     }
 
-    public static double setPrecision(double d, int precision) {
-        return BigDecimal.valueOf(d)
-                .setScale(precision, RoundingMode.HALF_UP)
-                .doubleValue();
-    }
+    
 }
